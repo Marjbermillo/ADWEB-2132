@@ -1,0 +1,159 @@
+<header>
+    <!-- Background image -->
+    <div
+      class="p-5 text-center bg-image"
+      style="
+        background-image: url(assets/19.png);
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 90%;
+      "
+    >    <div style="padding: 10%;">
+      <h1 class="display-4" style="font-size:5em;"> <strong>FAVOLOSA PH</strong></h1></div>
+      <div class="mask">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+
+<body>
+    <h1 id="apparels" style="text-align: center; padding:2%; margin-top:5%;"><strong> Shop Now</strong></h1>
+    <h2 style="text-align:left; margin: 0% 0% 2%0%;"><strong> APPARELS & MORE</strong></h2>
+      <div style="margin-left:2% ;" class="row">
+        <div style="margin-top: 2%;" class="column" *ngFor="let std of apparels; trackBy: trackByData"> 
+          <div class="card h-100" style="width: 18rem; margin-top: 5%; margin-left: 5%;">
+            <img id="SHL0001" class = " card-img-top std" [src]="std.prodName"  style="width: 285px;"/>
+            <div class="card-body">
+              <h5 class="card-title">Product ID: {{std.id}}</h5>
+              <p class="card-text">Product Type: {{std.type}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Product Name: {{std.name}}</li>
+              <li class="list-group-item"> Product Description: {{std.prodDet}}</li>
+              <li class="list-group-item">Price: {{std.price}}</li>
+            </ul>
+            <a style="margin-left:30%; margin-top: 10%;" href="" class="card-link">Add To Cart</a> <br>
+          </div>
+        </div>
+        </div>
+
+    <!--Necklaces-->
+    <h2 style="text-align:left; margin: 5% 0% 2% 0%;"><strong>Necklaces</strong></h2>
+      <div style="margin-left:2% ;" class="row">
+        <div style="margin-top: 2%;" class="column" *ngFor="let std of necklaces; trackBy: trackByData1"> 
+          <div class="card h-100" style="width: 18rem; margin-top: 5%; margin-left: 5%;">
+            <img id="SHL0001" class = " card-img-top std" [src]="std.prodName"  style="width: 285px;"/>
+            <div class="card-body">
+              <h5 class="card-title">Product ID: {{std.id}}</h5>
+              <p class="card-text">Product Type: {{std.type}}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Product Name: {{std.name}}</li>
+              <li class="list-group-item"> Product Description: {{std.prodDet}}</li>
+              <li class="list-group-item">Price: {{std.price}}</li>
+            </ul>
+            <a style="margin-left:30%; margin-top: 10%;" href="" class="card-link">Add To Cart</a> <br>
+          </div>
+        </div>
+        </div>
+
+        
+    <!--Earrings-->
+    <h2 style="text-align:left; margin: 5% 0% 2% 0%;"><strong>Earrings</strong></h2>
+    <div style="margin-left:2% ;" class="row">
+      <div style="margin-top: 2%;" class="column" *ngFor="let std of earrings; trackBy: trackByData2"> 
+        <div class="card h-100" style="width: 18rem; margin-top: 5%; margin-left: 5%;">
+          <img id="SHL0001" class = " card-img-top std" [src]="std.prodName"  style="width: 285px;"/>
+          <div class="card-body">
+            <h5 class="card-title">Product ID: {{std.id}}</h5>
+            <p class="card-text">Product Type: {{std.type}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Product Name: {{std.name}}</li>
+            <li class="list-group-item"> Product Description: {{std.prodDet}}</li>
+            <li class="list-group-item">Price: {{std.price}}</li>
+          </ul>
+          <a style="margin-left:30%; margin-top: 10%;" href="" class="card-link">Add To Cart</a> <br>
+        </div>
+      </div>
+      </div>
+
+    <!--Rings-->
+    <h2 style="text-align:left; margin: 5% 0% 2% 0%;"><strong>Princess Rings</strong></h2>
+    <div style="margin-left:2% ;" class="row">
+      <div style="margin-top: 2%;" class="column" *ngFor="let std of rings; trackBy: trackByData3"> 
+        <div class="card h-100" style="width: 18rem; margin-top: 5%; margin-left: 5%;">
+          <img id="SHL0001" class = " card-img-top std" [src]="std.prodName"  style="width: 285px;"/>
+          <div class="card-body">
+            <h5 class="card-title">Product ID: {{std.id}}</h5>
+            <p class="card-text">Product Type: {{std.type}}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Product Name: {{std.name}}</li>
+            <li class="list-group-item"> Product Description: {{std.prodDet}}</li>
+            <li class="list-group-item">Price: {{std.price}}</li>
+          </ul>
+          <a style="margin-left:30%; margin-top: 10%;" href="" class="card-link">Add To Cart</a> <br>
+        </div>
+      </div>
+      </div>
+  </body> <br><br>
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Favolosa is a local brand that is committed to providing superior quality, real value, and affordable jewelry and apparel that will make its muses look more and feel more fabulous.
+            </p>
+            <h6>Location</h6>
+            <p>Pampanga, Philippines</p>
+            </div>
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/front-end-development/">Apparels & More</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">Necklaces</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Earrings</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Rings</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">Home</a></li>
+                <li><a href="http://scanfcode.com/contact/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Products</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Shop Now</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+           <a href="#">FavolosaPH</a>.
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
